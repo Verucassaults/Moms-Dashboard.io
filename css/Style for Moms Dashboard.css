@@ -1,0 +1,91 @@
+body {
+	background-image: url('Tulips 2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	}
+
+main {
+	position: relative;
+	top: 150px;
+}
+
+p {
+	font-family: times new roman;
+	}
+
+.navigation {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}	
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+nav h1 {
+    text-align: center;
+    background: rgba(176, 196, 222, 0.25);
+    padding: 2px;
+	color: rgb(0, 0, 128);
+}
+
+ul li {
+	background: rgba(255, 255, 255, 0.25);
+	font-weight: bold;
+	padding: 2px;
+	display: grid;	
+}
+
+.grid {
+  display: grid;
+  border: 2px silver solid;
+  width: 100%;
+  height: 30px;
+  grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.grid2 {
+	display: grid;
+	width: 100%;
+	height: 1000px;
+	grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+	grid-gap: 10px;
+	justify-items: center;
+	align-items: center;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px silver solid;
+}
+  
+.a {
+
+	grid-column-start: 1;
+	grid-column-end: span 1;
+	grid-row-start: 1;
+	grid-row-end: span 1;
+}
+
+.b {
+	grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.c {
+	grid-area: 3 / 3 / span 1 / span 1;
+}
+
+.d {
+	grid-area: 4 / 4 / span 1 / span 1;
+}
+
+.e {
+	grid-area: 5 / 5 / span 1 / span 1;
+}
