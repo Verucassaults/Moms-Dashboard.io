@@ -16,13 +16,14 @@ html {
 
 /* styles for images */
 
-.rotateimg90 {
+
+/* .rotateimg90 {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
-}
+} */
 
 nav ul {
     list-style: none;
@@ -33,8 +34,15 @@ nav ul {
 }
 
 .title {
-    font-weight: bold;
-    font-size: 1.25rem;
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    color: cornsilk;
+}
+
+.covid {
+    background-image: url("../Images/Coronavirus_Image.jpg");
+    height: 125px;
 }
 
 
@@ -60,4 +68,28 @@ nav ul {
     text-align: center;
     align-items: center;
     margin-bottom: 20px;
+}
+
+main ul {
+    list-style: none;
+    margin: 0 2px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+main ul a {
+    color: cornsilk;
+    font-weight: bold;
+}
+
+.break {
+    border: none;
+}
+
+main section p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-decoration: underline;
 }
