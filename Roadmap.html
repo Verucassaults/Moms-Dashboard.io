@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="./JavaScript/collapsible_navbar.js"></script>
     <link rel="shortcut icon" href="./tulip_favicon.png" type="image/png">
     <link href="./css/style_roadmap.css" type="text/css" rel="stylesheet">
     <title>Reopening Ireland</title>
@@ -17,25 +19,33 @@
     <main>
         <!-- Side navigation -->
         <div class="sidenav">
-            <h2><a href="index.html">HOME</a></h2>
-            <h2>The New Measures</h2>
+            <h3>Site Pages</h3>
+            <a href="index_alt.html">Home</a>
+            <a href="Moms_Gallery.html">Gallery</a>
+            <a href="Moms_Video_Gallery.html">Videos</a>
+            <a href="archived_messages.html">Archived Messages</a>
+
+            <br>
+            <h3>The New Measures</h3>
             <a href="#newmeasures">As of 5 May</a>
+            <button class="collapsible"><h3>5 phase Roadmap</h3></button>
+            <div class="content">
+                <a href="#phaseone">18 May (phase 1)</a>
+                <a href="#phasetwo">8 June (phase 2)</a>
+                <a href="#phasethree">29 June (phase 3)</a>
+                <a href="#phasefour">20 July (phase 4)</a>
+                <a href="#phasefive">10 August (phase 5)</a>
+            </div>
+            <script type="text/javascript" src="./JavaScript/collapsible_navbar.js"></script>
             <br>
-            <h2>5-phase Roadmap</h2>
-            <a href="#phaseone">18 May (phase 1)</a>
-            <a href="#phasetwo">8 June (phase 2)</a>
-            <a href="#phasethree">29 June (phase 3)</a>
-            <a href="#phasefour">20 July (phase 4)</a>
-            <a href="#phasefive">10 August (phase 5)</a>
-            <br>
-            <h2>Addt'l Information</h2>
+            <h3>Addt'l Information</h3>
             <a href="#school">School Reopenings</a>
-            <div><img src="irish_harp_cropped.jpg"></div>
         </div>
 
         <!-- Page content -->
         <div class="main">
             <h1 id="top">Phased Reopening of Ireland</h1>
+            <div><img src="irish_harp_cropped.jpg"></div>
             <h2 id="newmeasures">New Measures As of 5 May</h2>
             <h2>Public health measures in place until 18 May to prevent the spread of COVID-19</h2>
             <h5>Published: 5 May 2020</h5>
@@ -96,9 +106,11 @@
             </ul>
             <p>The measures above will be reflected in the regulations to be made under the Health (Preservation and Protection and Other Emergency Measures in the Public Interest) Act 2000 and will be enforced by the Garda Síochána.</p>
             <a href="#top">Back to top</a>
-            <hr/>
+
+            <br>
             <div class="divider"></div>
             <hr/>
+
             <h2 id="phaseone">Phase One (1)</h2>
             <h2>Easing the COVID-19 restrictions on 18 May</h2>
             <h5>Published: 2 May 2020</h5>
@@ -153,32 +165,276 @@
             <h4>Group exercise</h4>
             <p>People can exercise - either on their own or in a group of no more than 4 people - where social distancing can be maintained and where there is no contact with other people. </p>
             <a href="#top">Back to top</a>
-            <hr/>
+
+            <br>
             <div class="divider"></div>
             <hr/>
+
             <h2 id="phasetwo">Phase Two (2)</h2>
+            <h2>Easing the COVID-19 restrictions on 8 June</h2>
+            <h5>Published: 2 May 2020</h5>
+            <h5>From: Department of the Taoiseach</h5>
+            <br>
+            <h3>Introduction</h3>
+            <p>These measures are part of the second phase of lifting the public health restrictions that were put in place to protect us all from COVID-19. They come into effect on top of the measures in phase 1. </p>
+            <p>These measures are a part of the roadmap to easing restrictions. They are just an indication of what might happen if everything goes well with restricting the spread of COVID-19 in Ireland. These measures will only come into place when the
+                National Public Health Emergency Team says that the conditions are right for more relaxation of the restrictions in place to protect us all. </p>
+            <br>
+            <h3>Public health measures</h3>
+            <h4>Stay at home</h4>
+            <p>The advice will be to still avoid unnecessary journeys wherever possible. </p>
+            <p>You will be able to travel up to 20 kilometres away from your home as opposed to the 5 kilometre limit which was in place since 5 May. </p>
+            <h4>Social visits</h4>
+            <p>Up to 4 people may visit another household for a short period of time but everyone must keep at least 2 metres apart from people they don't live with. </p>
+            <h4>Cocooning</h4>
+            <p>Shops will provide dedicated hours for those who are cocooning (people over the age of 70 and those who are medically vulnerable) with strict social distancing and gloves made available. Shoppers should ideally wear face coverings. </p>
+            <p>Those who are cocooning can have a small number of visitors to their home. The visitors must wear gloves, face coverings and keep at least 2 metres away from the person who is cocooning. </p>
+            <h4>Funerals</h4>
+            <p>A slightly larger number of people can be in attendance at funerals but numbers will still be restricted to immediate family and close friends and limited to a maximum number of mourners (this number will be announced closer to 8 June) for
+                a limited period of time where social distancing can be maintained. </p>
+            <br>
+            <h3>Work</h3>
+            <h4>People who can work safely while maintaining a 2-metre distance from others</h4>
+            <p>Workers, like those who work on their own, as well as other workers who can keep a 2 metre distance from others can return to work. Social distancing requirements continue to apply. </p>
+            <h4>Plans to be put in place by employers and the government</h4>
+            <p>Organisations are to develop plans for a return to onsite working by employees in light of COVID-19, considering: </p>
+            <ul>
+                <li>social distancing compliance</li>
+                <li>hygiene and cleaning</li>
+                <li>compliance in higher risk situations</li>
+                <li>plans for medically vulnerable or pregnant people</li>
+                <li>extended opening hours to enable social distancing</li>
+            </ul>
+            <br>
+            <h3>Shops and other commercial businesses</h3>
+            <h4>Shops that can re-open</h4>
+            <p>Small retail outlets can reopen with a small number of staff on the basis that the retailer can control the number of individuals that staff and customers interact with at any one time. </p>
+            <h4>Marts</h4>
+            <p>Marts can be opened where social distancing can be maintained. </p>
+            <br>
+            <h3>Sport, tourism and culture</h3>
+            <h4>Libraries</h4>
+            <p>Public libraries may open so long as the numbers allowed in are limited, social distancing is observed and there is strict hand-sanitising in place for anyone who goes into the library. </p>
+            <h4>Group exercise</h4>
+            <p>People can take part in outdoor sporting and fitness activities, involving team sports training in small groups (but not matches) where social distancing can be maintained and where there is no contact. </p>
             <a href="#top">Back to top</a>
-            <hr/>
+
+            <br>
             <div class="divider"></div>
             <hr/>
+
             <h2 id="phasethree">Phase Three (3)</h2>
+            <h2>Easing the COVID-19 restrictions on 29 June</h2>
+            <h5>Published: 2 May 2020</h5>
+            <h5>From: Department of the Taoiseach</h5>
+            <br>
+            <h3>Introduction</h3>
+            <p>These measures are part of the third phase of lifting the public health restrictions that were put in place to protect us all from COVID-19. They come into effect on top of the measures announced as part of phase 2. </p>
+            <p>These measures are a part of the roadmap to easing restrictions. They are just an indication of what might happen if everything goes well with restricting the spread of COVID-19 in Ireland. These measures will only come into effect when the
+                National Public Health Emergency Team says that the conditions are right for more relaxation of the restrictions in place to protect us all. </p>
+            <br>
+            <h3>Public health measures</h3>
+            <h4>Stay at home</h4>
+            <p>You should still stay at home as much as you possibly can. You can travel no further than 20 kilometres away from your home. </p>
+            <br>
+            <h3>Education and childcare</h3>
+            <h4>Childcare for essential workers</h4>
+            <p>The opening of crèches, childminders and pre-schools for children of essential workers will take place in a phased manner. Social distancing and other requirements will apply. </p>
+            <br>
+            <h3>Work</h3>
+            <h4>People who can work safely while maintaining a 2 metre distance from others</h4>
+            <p>Organisations can open where employees have low levels of daily interaction with people. </p>
+            <p>Remote working is to continue for all workers or businesses that can currently do so. </p>
+            <br>
+            <h3>Health and Social Care Services</h3>
+            <p>Phased visiting will begin in hospitals, residential centres and prisons. Consideration will be given to the availability of personal protective equipment (PPE) and other protections. </p>
+            <br>
+            <h3>Shops and other commercial businesses</h3>
+            <h4>Retail outlets</h4>
+            <p>The opening of all other non-essential retail outlets will be phased in on the basis of a restriction on the number of staff and customers per square metre so that social distancing can be maintained. </p>
+            <p>This is to be limited to retail outlets with a street-level entrance and exit and does not include those in enclosed shopping centres due to higher risk. </p>
+            <h4>Cafés and restaurants</h4>
+            <p>Cafés and restaurants providing on-premises food and beverages can re-open. They must comply with social distancing and strict cleaning protocols. </p>
+            <br>
+            <h3>Sport and tourism</h3>
+            <h4>Playgrounds</h4>
+            <p>Playgrounds will be allowed to re-open where social distancing and hygiene can be maintained. </p>
+            <h4>Sporting activities</h4>
+            <p>Sporting activities and events can resume “behind closed doors”, where arrangements are in place to enable participants to maintain social distancing. </p>
+            <br>
+            <h3>Transport and travel</h3>
+            <h4>Travel restrictions</h4>
+            <p>Travel restrictions may be implemented on numbers travelling to and in major urban centres on weekdays and weekend days. </p>
+            <h4>Public and private transport</h4>
+            <p>Public transport providers are to actively restrict and monitor passenger numbers to ensure compliance with social distancing. </p>
+            <p>Restrictions are to be implemented on numbers of private cars. </p>
+            <p>Specific measures will be introduced at ports and airports. </p>
             <a href="#top">Back to top</a>
-            <hr/>
+
+            <br>
             <div class="divider"></div>
             <hr/>
+
             <h2 id="phasefour">Phase Four (4)</h2>
+            <h2>Easing the COVID-19 restrictions on 20 July</h2>
+            <h5>Published: 2 May 2020</h5>
+            <h5>From: Department of the Taoiseach</h5>
+            <br>
+            <h3>Introduction</h3>
+            <p>These measures are part of the fourth phase of lifting the public health restrictions that were put in place to protect us all from COVID-19. They come into effect on top of the measures announced as part of phase 3 of the roadmap.</p>
+            <p>These measures are only an indication of what might happen if everything goes well with restricting the spread of COVID-19 in Ireland. They will only come into effect when the National Public Health Emergency Team says that the conditions
+                are right for more relaxation of the restrictions in place to protect us all.</p>
+            <br>
+            <h3>Public health measures</h3>
+            <h4>Easing of stay at home</h4>
+            <p>As part of phase 4 of the roadmap, it is planned that you will be able to travel outside your region and beyond the 20 kilometre restriction in phase 3.</p>
+            <h4>Social visits</h4>
+            <p>A slightly larger number of people may visit another household for a short period of time while maintaining social distancing.</p>
+            <h4>Social gatherings</h4>
+            <p>Small social gatherings by family and close friends will be allowed but are to be limited to a maximum number of attendees for a period of time where social distancing can be maintained (for example: small weddings, baptisms).</p>
+            <h4>Other non-commercial social events</h4>
+            <p>Small social (non-family) gatherings will be allowed but are to be limited to a maximum number of participants for a period of time where social distancing can be maintained.</p>
+            <br>
+            <h3>Education and childcare</h3>
+            <p>Crèches, childminders and preschools will open for children of all workers on a gradually increasing phased basis (for example, one day per week) and slowly increasing thereafter.</p>
+            <br>
+            <h3>Work</h3>
+            <p>Employees who cannot work remotely are to be considered first for a return to onsite working.</p>
+            <p>Depending on the business, measures such as shift work and staggered hours should be implemented to increase the numbers of workers available for work in any 24-hour period, as long as the business can limit the number of workers interacting
+                with each other.</p>
+            <p>Remote working continues for all workers or businesses that can do so.</p>
+            <br>
+            <h3>Shops and other commercial businesses</h3>
+            <h4>Retail</h4>
+            <p>Restrictions can be gradually eased on higher risk services involving direct physical contact for periods of time between people and for which there is a population wide demand (for example, hairdressers).</p>
+            <br>
+            <h3>Cultural and social</h3>
+            <h4>Culture and places of worship</h4>
+            <p>Museums, galleries, and other cultural outlets can be opened where people can move freely without coming into contact with others, social distancing can be maintained and strict hand hygiene is enforced on entry.</p>
+            <p>Places of worship can be opened with social distancing measures.</p>
+            <h4>Sport</h4>
+            <p>Competitions for sports teams (for example, soccer and GAA) can resume, but only where limitations are placed on the numbers of spectators and where social distancing can be maintained.</p>
+            <p>Public swimming pools can be opened where effective cleaning can be carried out and social distancing can be maintained.</p>
+            <h4>Social and recreational</h4>
+            <p>Hotels, hostels, caravan parks, and holiday parks for social and tourist activities can open, initially on a limited occupancy basis (or number of people per square metre), and then increasing over time. Social distancing measures are to be
+                followed.
+            </p>
+            <p>Hotel bars remain closed.</p>
+            <br>
+            <h3>Transport and travel</h3>
+            <p>Restrictions will gradually be decreased on the numbers travelling in major urban centres on public transport and in private cars.</p>
+            <p>Specific measures will be introduced at ports and airports.</p>
+
             <a href="#top">Back to top</a>
-            <hr/>
+
+            <br>
             <div class="divider"></div>
             <hr/>
+
             <h2 id="phasefive">Phase Five (5)</h2>
+            <h2>Easing the COVID-19 restrictions on 10 August</h2>
+            <h5>Published: 2 May 2020</h5>
+            <h5>From: Department of the Taoiseach</h5>
+            <br>
+            <h3>Introduction</h3>
+            <p>These measures are part of the fifth phase of lifting the public health restrictions that were put in place to protect us all from COVID-19. They come into effect on top of the measures announced as part of phase 4 of the plan. </p>
+            <p>These measures are part of the roadmap to easing restrictions. They are just an indication of what might happen if everything goes well with restricting the spread of COVID-19 in Ireland. </p>
+            <p>These measures will only come into effect when the National Public Health Emergency Team says that the conditions are right for more relaxation of the restrictions in place to protect us all. </p>
+            <br>
+            <h3>Public health measures</h3>
+            <h4>Travelling in Ireland</h4>
+            <p>As in phase 4, you will be able to travel outside your region. </p>
+            <h4>Social gatherings</h4>
+            <p>Some larger social gatherings can take place (for example, weddings). These will be restricted due to the risks involved. </p>
+            <p>Some large social (non-family) gatherings can take place - these will also be restricted.</p>
+            <h4>Restricted movements</h4>
+            <p>Continue to restrict all household contact of suspected cases, who are either awaiting test results or are in 14 days self-isolation.</p>
+            <br>
+            <h3>Education and childcare</h3>
+            <h4>Opening of schools and colleges</h4>
+            <p>The following educational institutions can open on a phased basis at the beginning of the academic year 2020/21: </p>
+            <ul>
+                <li>primary and secondary schools</li>
+                <li>universities</li>
+                <li>third level education centres</li>
+                <li>adult education centres</li>
+            </ul>
+            <br>
+            <h3>Health and social care services</h3>
+            <p>There is to be a return to normal visiting for hospitals, residential healthcare centres, other residential settings and prisons.</p>
+            <br>
+            <h3>Work</h3>
+            <h4>Return to work</h4>
+            <p>A phased return to work across all sectors.</p>
+            <p> ‘Higher risk’ organisations which, by their nature cannot easily maintain social distancing, will implement plans for how they can progress towards the onsite return of a full staff complement.</p>
+            <p>Remote working continues for all workers or businesses that can do so.</p>
+            <br>
+            <h3>Shops and other commercial businesses</h3>
+            <p>Enclosed shopping centres can re-open, with social distancing in place.</p>
+            <p>A further loosening of restrictions for services involving direct physical contact for periods of time between people for which there is not a population-wide demand (for example, tattoo, piercing) for later phases due to risks involved.</p>
+            <br>
+            <h3>Cultural and social</h3>
+            <h4>Theatres and cinemas</h4>
+            <p>Theatres and cinemas can re-open with social distancing in place.</p>
+            <h4>Social</h4>
+            <p>Indoor recreational venues, such as bowling alleys and bingo halls, can re-open where numbers can be limited, cleaning can be maintained, and social distancing can be complied with.</p>
+            <p>Pubs, nightclubs and casinos can re-open, where social distancing and strict cleaning can be complied with.</p>
+            <p>Festivals, events and other social and cultural mass gatherings can take place only in accordance with both indoor and outdoor number restrictions and where social distancing can be complied with.</p>
+            <h4>Sport</h4>
+            <p>Close physical contact sports, such as rugby and boxing, can resume.</p>
+            <p>Gyms, dance studios and sports clubs can re-open, only where regular and effective cleaning can be carried out and social distancing can be maintained.</p>
+            <p>Spectators can begin to attend live sporting events only in accordance with both indoor and outdoor number restrictions and where social distancing can be complied with.</p>
+            <br>
+            <h3>Transport and travel</h3>
+            <p>Non-resident tourist travel to offshore islands can resume.</p>
+            <p>Social distancing and hygiene measures are to continue for public and private transport.</p>
+
             <a href="#top">Back to top</a>
-            <hr/>
+
+            <br>
             <div class="divider"></div>
             <hr/>
-            <h2 id="school">School Reopenings in Fall 2020</h2>
+            <div class="email">
+                <h2 id="school">School Reopenings in Fall 2020</h2>
+                <h3>For University of Limerick and Mary Immaculate College</h3>
+                <p>Opening date: 28 September 2020 for all levels except first years</p>
+                <p>As outlined below, first year students may not start until November.</p>
+                <br>
+                <h3>Email: COVID-19, communication to all Staff and Students, update re. Academic Year 2020/21</h3>
+                <p>Thursday, 30 April 2020</p>
+                <br>
+                <h4>Dear colleagues and students,</h4>
+                <br>
+                <p>As you will know, MIC’s COVID-19 Response Group continues to meet regularly in order to plan for the future. While we continue to follow official advice and await further confirmation from the Government regarding restrictions and physical
+                    distancing, we do so acutely aware of the anxiety that this uncertainty is causing our staff and students. </p>
+
+                <p>This morning, the University of Limerick announced the start date for the Autumn Semester 2020/21 as 28th September 2020 for 2nd, 3rd, and 4th year undergraduate students and all current and new postgraduate students.</p>
+
+                <p>In keeping with our practice of aligning our academic calendar with that of the University, the following decision was taken today with regard to dates for the MIC Academic Year 2020/21.</p>
+
+                <p>The Autumn Semester will, therefore, begin on September 28th for 2nd, 3rd, and 4th year undergraduate students and all current and new postgraduate students.</p>
+
+                <p>There are a number of external factors that influence the start date for incoming first years; principally, confirmation of the Leaving Certificate dates and the completion of CAO offers and acceptances.</p>
+
+                <p>If the Leaving Certificate takes place as currently planned at the end of July, then we would hope that the semester will commence for first years at the beginning of November. However, it should be emphasised that considerable uncertainty
+                    still surrounds this projected date and such matters lie beyond our control.</p>
+
+                <p>At this stage, it is anticipated that the Spring Semester will begin as planned on 25th January 2021 for all students.</p>
+
+                <p>Clearly, these dates may need to be revised in line with official government advice.</p>
+
+                <p>Further communications will be issued to staff next week with regard to academic and operational planning.</p>
+
+                <p>In the interim, I wish you and your families a safe and happy May bank holiday weekend. </p>
+                <br>
+                <br>
+                <p>Kind regards, </p>
+                <p>Eugene Wall</p>
+                <br>
+                <p>Professor Eugene Wall | President | Mary Immaculate College, South Circular Road, Limerick, Ireland, V94 VN26</p>
+            </div>
             <a href="#top">Back to top</a>
-            <hr/>
+            <br>
             <div class="divider"></div>
             <hr/>
 

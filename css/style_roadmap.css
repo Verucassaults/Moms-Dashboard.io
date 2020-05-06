@@ -27,8 +27,16 @@
 }
 
 .sidenav h2 {
-    text-align: center;
+    text-align: left;
+    margin-left: 15px;
     color: whitesmoke;
+    text-decoration: underline;
+}
+
+.sidenav h3 {
+    text-align: left;
+    margin-left: 15px;
+    color: rgb(218, 236, 211);
     text-decoration: underline;
 }
 
@@ -37,15 +45,16 @@
 
 .sidenav a {
     padding: 6px 8px 6px 16px;
+    line-height: 25px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     display: block;
     font-weight: bold;
 }
 
 
-/* celtic harp image on sidenav bar */
+/* celtic harp image on sidenav bar 
 
 .sidenav div {
     display: grid;
@@ -54,7 +63,7 @@
     vertical-align: bottom;
     margin-top: 100px;
     margin-left: 75px;
-}
+} */
 
 
 /* When you mouse over the navigation links, change their color */
@@ -84,8 +93,14 @@
     text-decoration: underline;
 }
 
+.main div {
+    float: right;
+}
+
 .divider {
-    height: 36.8px;
+    margin-top: 25px;
+    width: 100%;
+    height: 36.9px;
     background-color: rgb(14, 57, 30);
 }
 
@@ -103,4 +118,33 @@
 
 footer {
     margin-left: 270px;
+}
+
+
+/* animated collapsible navbar */
+
+.collapsible {
+    background-color: rgb(14, 57, 30);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgb(14, 57, 30);
+    color: white;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.email p {
+    font-size: 18px;
 }

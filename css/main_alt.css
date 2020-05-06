@@ -1,0 +1,140 @@
+nav h1 {
+    text-align: center;
+}
+
+
+/* The sidebar menu */
+
+.sidenav {
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 260px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: rgb(14, 57, 30);
+    /* blue variant */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.sidenav h2 {
+    text-align: left;
+    margin-left: 15px;
+    color: rgb(218, 236, 211);
+    text-decoration: underline;
+}
+
+.sidenav h3 {
+    text-align: left;
+    margin-left: 15px;
+    color: rgb(218, 236, 211);
+    text-decoration: underline;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    line-height: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: bold;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    margin-left: 260px;
+    background-image: url('Tulips_2.jpg');
+    background-size: 85%;
+    background-position: left 100% top 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main {
+    /* Same as the width of the sidebar */
+    padding: 0px 10px;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+.main h1 {
+    color: whitesmoke;
+    background-color: rgb(14, 57, 30);
+}
+
+.main h2 {
+    text-align: left;
+}
+
+.main h3 {
+    text-decoration: underline;
+}
+
+.divider {
+    height: 36.8px;
+    background-color: rgb(14, 57, 30);
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 16px;
+    }
+}
+
+footer {
+    margin-left: 260px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*
+footer div {
+    margin-left: 15px;
+} */
+
+
+/* animated collapsible navbar */
+
+.collapsible {
+    background-color: rgb(14, 57, 30);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgb(14, 57, 30);
+    color: white;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
