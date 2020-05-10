@@ -3,6 +3,14 @@ nav h1 {
 }
 
 
+/* mother's day animation*/
+
+#mother {
+    color: aqua;
+    transform: rotateY(130deg);
+}
+
+
 /* The sidebar menu */
 
 .sidenav {
