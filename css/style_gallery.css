@@ -1,11 +1,93 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
     font-size: 24px;
 }
 
+#menu {
+  display: none;
+}
+
+
+/* The sidebar menu -------------------------------------------------- */
+.sidenav {
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 260px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: rgb(14, 57, 30);
+    /* blue variant */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+
+.sidenav h3 {
+    text-align: left;
+    margin-left: 15px;
+    color: rgb(218, 236, 211);
+    text-decoration: underline;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 15px 8px 15px 16px;
+    line-height: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    font-weight: bold;
+}
+
+
+/* animated collapsible navbar */
+
+.collapsible {
+    background-color: rgb(14, 57, 30);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgb(14, 57, 30);
+    color: white;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sidenav div img {
+  vertical-align: bottom;
+	margin-top: 100px;
+	margin-left: 80px;
+}
+/* End of Sidenav bar ------------------------------------- */
+
+
+body {
+  background-color: rgb(245, 245, 245);
+  margin-left: 260px;
+}
 
 /* Add a pointer when hovering over the thumbnail images */
 
@@ -14,41 +96,7 @@ html {
 }
 
 
-/* styles for images */
-
-
-/* .rotateimg90 {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-} */
-
-nav ul {
-    list-style: none;
-    margin: 0 2px;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-.title {
-    font-weight: normal;
-    font-size: 1.5rem;
-    text-align: center;
-    color: cornsilk;
-}
-
-.covid {
-    background-image: url("../images/Coronavirus_Image.jpg");
-    height: 125px;
-}
-
-
-/* div a {
-    padding-bottom: 2.5rem;
-} */
+/* styles for images ------------------- */
 
 .column {
     float: left;
@@ -58,7 +106,6 @@ nav ul {
     align-items: center;
 }
 
-
 /* Clearfix (clear floats) */
 
 .row::after {
@@ -67,21 +114,7 @@ nav ul {
     display: table;
     text-align: center;
     align-items: center;
-    margin-bottom: 20px;
-}
-
-main ul {
-    list-style: none;
-    margin: 0 2px;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-main ul a {
-    color: cornsilk;
-    font-weight: bold;
-}
+    }
 
 .break {
     border: none;
@@ -92,4 +125,105 @@ main section p {
     font-weight: bold;
     font-size: 1.25rem;
     text-decoration: underline;
+}
+
+
+/* On landscape tablets ------------------------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1300px) and (orientation: landscape) {
+  #menu {
+    display: none;
+  }
+  body {
+    background-color: rgb(245, 245, 245);
+  }
+
+  .column {
+      float: left;
+      width: 25%;
+      padding: 25px;
+      text-align: center;
+      align-items: center;
+  }
+}
+
+
+
+
+/* Smartphones (portrait) ----------------------- */
+@media only screen and (max-device-width: 767px) and (orientation: portrait) {
+
+/* turn off sidenav ------------------ */
+main .sidenav {
+  display: none;
+  }
+.sidenav div img {
+  display: none;
+  }
+/* end of turn off sidenav ------------------ */
+
+body {
+    background-color: rgb(245, 245, 245);
+    margin-left: 0.1px;
+
+  }
+
+/* top navbar ---------------------------- */
+#menu {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+    width: 100%
+  }
+
+  #menu h3 {
+      text-align: center;
+      color: rgb(218, 236, 211);
+      text-decoration: underline;
+  }
+
+  #menu a {
+      padding: 10px 8px 10px 10px;
+      line-height: 25px;
+      text-decoration: none;
+      font-size: 14px;
+      color: white;
+      display: block;
+      font-weight: bold;
+  }
+.collapsible {
+    background-color: rgb(14, 57, 30);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgb(14, 57, 30);
+    color: white;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* end of top navbar ---------------------------- */
+
+/* image styles */
+  .column {
+      float: left;
+      width: 50%;
+      padding: 20px;
+      text-align: center;
+      align-items: center;
+  }
+/* end of image styles */
+
 }

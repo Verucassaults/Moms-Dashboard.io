@@ -2,24 +2,217 @@
     font-size: 24px;
 }
 
-.video1 {
-    height: 400px;
-    width: 400px;
-    border: 10px;
-    border-color: cornflowerblue;
+#menu {
+  display: none;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0 2px;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+
+/* The sidebar menu -------------------------------------------------- */
+.sidenav {
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 260px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: rgb(14, 57, 30);
+    /* blue variant */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+
+.sidenav h2 {
+    text-align: left;
+    margin-left: 15px;
+    color: rgb(218, 236, 211);
+    text-decoration: underline;
+}
+
+.sidenav h3 {
+    text-align: left;
+    margin-left: 15px;
+    color: rgb(218, 236, 211);
+    text-decoration: underline;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 15px 8px 15px 16px;
+    line-height: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    font-weight: bold;
+}
+
+
+/* animated collapsible navbar */
+
+.collapsible {
+    background-color: rgb(14, 57, 30);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgb(14, 57, 30);
+    color: white;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sidenav div img {
+  vertical-align: bottom;
+	margin-top: 100px;
+	margin-left: 80px;
+}
+/* End of Sidenav bar ------------------------------------- */
+
+
+body {
+  background-color: rgb(245, 245, 245);
+  margin-left: 260px;
+}
+
+
+iframe {
+  height: 235px;
+  width: 420px;
+}
+
+p {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .box {
-    display: inline-block;
-    margin-left: 50px;
-    margin-right: 50px;
+    float: left;
+    width: 50%;
+    padding: 0px;
     text-align: center;
+    align-items: center;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    text-align: center;
+    align-items: center;
+    }
+
+
+.backtop {
+  margin-left: 50px;
+}
+
+/* On landscape tablets ------------------------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1300px) and (orientation: landscape) {
+  #menu {
+    display: none;
+  }
+
+  body {
+    background-color: rgb(245, 245, 245);
+  }
+
+  iframe {
+    height: 175px;
+    width: 315px;
+  }
+}
+
+
+
+
+/* Smartphones (portrait) ----------------------- */
+@media only screen and (max-device-width: 767px) and (orientation: portrait) {
+  /* turn off sidenav ------------------ */
+  main .sidenav {
+    display: none;
+    }
+  .sidenav div img {
+    display: none;
+    }
+  /* end of turn off sidenav ------------------ */
+  body {
+    background-color: rgb(245, 245, 245);
+    margin-left: 0.1px;
+  }
+  /* top navbar ---------------------------- */
+  #menu {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      align-items: center;
+      text-align: center;
+      width: 100%
+    }
+
+    #menu h3 {
+        text-align: center;
+        color: rgb(218, 236, 211);
+        text-decoration: underline;
+    }
+
+    #menu a {
+        padding: 10px 8px 10px 10px;
+        line-height: 25px;
+        text-decoration: none;
+        font-size: 14px;
+        color: white;
+        display: block;
+        font-weight: bold;
+    }
+  .collapsible {
+      background-color: rgb(14, 57, 30);
+      color: white;
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 16px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: rgb(14, 57, 30);
+      color: white;
+      font-size: 16px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  /* end of top navbar ---------------------------- */
+
+.box {
+    float: left;
+    width: 80%;
+    padding: 0px;
+    text-align: center;
+    align-items: center;
+}
 }

@@ -1,5 +1,7 @@
 /* archived messages style sheet */
-
+#menu {
+  display: none;
+}
 
 /* The sidebar menu */
 
@@ -89,18 +91,6 @@ body h1 {
     background-color: rgb(14, 57, 30);
 }
 
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 16px;
-    }
-}
-
 footer {
     margin-left: 260px;
     position: fixed;
@@ -108,3 +98,82 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+/* On landscape tablets ------------------------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1300px) and (orientation: landscape) {
+  #menu {
+    display: none;
+  }
+  body {
+    background-color: rgb(245, 245, 245);
+  }
+}
+
+
+  /* Smartphones (portrait) ----------------------- */
+  @media only screen and (max-device-width: 767px) and (orientation: portrait) {
+
+  /* turn off sidenav ------------------ */
+  main .sidenav {
+    display: none;
+    }
+  .sidenav div img {
+    display: none;
+    }
+  /* end of turn off sidenav ------------------ */
+
+  body {
+      background-color: rgb(245, 245, 245);
+      }
+
+  /* top navbar ---------------------------- */
+  #menu {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      align-items: center;
+      text-align: center;
+      width: 100%
+    }
+
+    #menu h3 {
+        text-align: center;
+        color: rgb(218, 236, 211);
+        text-decoration: underline;
+    }
+
+    #menu a {
+        padding: 10px 8px 10px 10px;
+        line-height: 25px;
+        text-decoration: none;
+        font-size: 14px;
+        color: white;
+        display: block;
+        font-weight: bold;
+    }
+  .collapsible {
+      background-color: rgb(14, 57, 30);
+      color: white;
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 16px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: rgb(14, 57, 30);
+      color: white;
+      font-size: 16px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  /* end of top navbar ---------------------------- */
+
+  }

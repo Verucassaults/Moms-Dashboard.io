@@ -1,20 +1,21 @@
-nav h1 {
+main h1 {
     text-align: center;
 }
 
+#menu {
+  display: none;
+}
 
-/* mother's day animation*/
-
+/* mother's day animation
 #mother {
     color: aqua;
     font-size: 25px;
     text-decoration: wavy;
     text-decoration-color: gold;
 }
+*/
 
-
-/* The sidebar menu */
-
+/* The sidebar menu ----------------- */
 .sidenav {
     height: 100%;
     /* Full-height: remove this if you want "auto" height */
@@ -32,7 +33,7 @@ nav h1 {
     overflow-x: hidden;
     /* Disable horizontal scroll */
     padding-top: 20px;
-}
+  }
 
 .sidenav h2 {
     text-align: left;
@@ -52,13 +53,22 @@ nav h1 {
 /* The navigation menu links */
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 15px 8px 15px 16px;
     line-height: 25px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     display: block;
     font-weight: bold;
+}
+
+
+/* navigation image */
+
+.sidenav div img {
+  vertical-align: bottom;
+	margin-top: 100px;
+	margin-left: 80px;
 }
 
 html {
@@ -80,15 +90,6 @@ body {
     background-color: rgba(245, 245, 245, 0.5);
 }
 
-.main h1 {
-    color: whitesmoke;
-    background-color: rgb(14, 57, 30);
-}
-
-.main h2 {
-    text-align: left;
-}
-
 .main h3 {
     text-decoration: underline;
 }
@@ -98,17 +99,6 @@ body {
     background-color: rgb(14, 57, 30);
 }
 
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 16px;
-    }
-}
 
 footer {
     margin-left: 260px;
@@ -147,4 +137,107 @@ footer div {
     color: white;
     font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+/* On landscape tablets ------------------------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1300px) and (orientation: landscape) {
+  #menu {
+    display: none;
+  }
+
+	div img {
+    margin-top: 100px;
+		margin-left: 80px;
+  }
+}
+
+
+
+
+
+  /* Smartphones (portrait) ----------------------- */
+  @media only screen and (max-device-width: 767px) and (orientation: portrait) {
+
+  /* turn off sidenav ------------------ */
+  main .sidenav {
+    display: none;
+    }
+  .sidenav div img {
+    display: none;
+    }
+  /* end of turn off sidenav ------------------ */
+
+body {
+      background-image: url('Tulips_2.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin-left: 1px;
+      margin-right: 1px;
+  }
+
+
+  /* top navbar ---------------------------- */
+  #menu {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      align-items: center;
+      text-align: center;
+      width: 100%
+    }
+
+    #menu h3 {
+        text-align: center;
+        color: rgb(218, 236, 211);
+        text-decoration: underline;
+    }
+
+    #menu a {
+        padding: 10px 8px 10px 10px;
+        line-height: 25px;
+        text-decoration: none;
+        font-size: 14px;
+        color: white;
+        display: block;
+        font-weight: bold;
+    }
+  .collapsible {
+      background-color: rgb(14, 57, 30);
+      color: white;
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 16px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: rgb(14, 57, 30);
+      color: white;
+      font-size: 16px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  /* end of top navbar ---------------------------- */
+
+.main {
+  margin-left: 1px;
+  margin-right: 1px;
+  padding: 1px 1px;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+footer {
+    position: fixed;
+    margin-left: 1px;
+    margin-right: 1px;
+}
 }
